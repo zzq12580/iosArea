@@ -47,6 +47,9 @@
 			},
 			//将输入的文件类型字符串转化为数组,原格式为*.jpg;*.png
 			getFileTypes : function(str){
+				if(str == 'video/*'){
+					str ='*.avi;*.mp4;*.mpeg;*.mov;*.m4v;*.asx;*.ogm;*.wmv;*.ogv;*.webm';
+				}
 				var result = [];
 				var arr1 = str.split(";");
 				for(var i=0, len=arr1.length; i<len; i++){
@@ -77,13 +80,25 @@
 					ppt : ['application/vnd.ms-powerpoint'],
 					pptx : ['application/vnd.openxmlformats-officedocument.presentationml.presentation'],
 					mp3 : ['audio/mp3'],
+					avi : ['video/avi'],
 					mp4 : ['video/mp4'],
+					mpeg : ['video/mpeg'],
+					mov : ['video/mov'],
+					m4v : ['video/m4v'],
+					asx : ['video/asx'],
+					ogm : ['video/ogm'],
+					wmv : ['video/wmv'],
+					ogv : ['video/ogv'],
+					webm : ['video/webm'],
 					pdf : ['application/pdf']
 				};
 				return mimetypeMap[name];
 			},
 			//获取上传组件accept的值
 			getAcceptString : function(str){
+				if(str == 'video/*'){
+					return str;
+				}
 				var types = F.getFileTypes(str);
 				var result = [];
 				for(var i=0,len=types.length;i<len;i++){
