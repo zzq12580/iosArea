@@ -19,7 +19,7 @@
 
 引入两个js文件
 <script src="js/LAreaData1.js"></script>
-<script src="js/LArea.js"></script>
+<script src="js/LArea.js"></script>     
 
 js部门的编写
 var area1 = new LArea();
