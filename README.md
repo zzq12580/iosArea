@@ -4,7 +4,7 @@
 这是html部门
 <div>
     <h1>LArea</h1>
-    <div class="content-block">
+    <div class="content-block">  
         <input id="demo1" type="text" readonly="" placeholder="城市选择特效"  value="广东省,广州市,天河区"/>
         <input id="value1" type="hidden"/>
     </div>
