@@ -408,7 +408,7 @@
 						var fd = new FormData();
 						fd.append(option.fileObjName,file);
 						fd.append(option.fileObjName, originalfile.name);
-						fd.append('lastModifiedDate', originalfile.lastModifiedDate.getTime());
+						fd.append('lastModifiedDate', Date.parse(originalfile.lastModifiedDate));
 						if(option.formData){
 						 	for(key in option.formData){
 						  		fd.append(key,option.formData[key]);
