@@ -112,4 +112,4 @@ jQuery文件上传插件，HTML5版uploadify，保持与uploadify一致的API，
 #####使用截图：
 ![使用截图](http://images.cnitblog.com/blog/520134/201312/01185252-55d3c4606ddb4a8995dc1b9563d2847b.jpg)
 
->更多详细说明，欢迎访问我的博客:[http://www.cnblogs.com/lvdabao/p/3452858.html](http://www.cnblogs.com/lvdabao/p/3452858.html)
+
